@@ -1,0 +1,30 @@
+body {
+	
+}
+
+div#navigation {
+	display : none;
+}
+
+div#top div#sidebar div#logo h1 {
+	background : transparent;
+	height : 100%;
+	width : 100%;
+	text-indent : 0;
+}
+
+div#top div#sidebar div#logo h1 a {
+	display : inline;
+	height : 100%;
+	width : 100%;
+}
+
+div#top div#boxes {
+	margin : 10px;
+	padding : 5px;
+}
+
+div#top div#sidebar {
+	float : none;
+	width : 100%;
+}
