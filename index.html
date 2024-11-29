@@ -1,53 +1,72 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
-        <title>Paul Sweeney Agronomy Ltd | Welcome to Paul Sweeney Agronomy Ltd</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PS Agronomy</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+        }
 
-		<base href="http://www.psagronomy.co.uk/">
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #F2C68A;
+            position: relative;
+        }
 
-		<link rel="stylesheet" type="text/css" href="./css/index.css">
-		<link rel="stylesheet" type="text/css" media="print" href="./css/print.css">
+        .image-wrapper {
+            position: relative;
+            max-width: 100%;
+            max-height: 100vh;
+        }
 
-        
-	<meta name="Keywords" content="The website of Paul Sweeney Agronomy, offering independent agronomy service to farmers in Northwest England and Cheshire">
-	<meta name="keywords" content="Paul Sweeney, agronomy, wheat, tractors, farms, rural, CAP, setaside, cheshire, farmers, merseyside, wirral, sweeney">
-	<meta name="google-site-verification" content="aV3P2j0Iq4GxNA8YP4XImzhgrgIdAvgU4u4F5weh5zg">
+        img {
+            max-width: 100%;
+            max-height: 100vh;
+            height: auto;
+            padding: 20px;
+            object-fit: contain;
+        }
+
+        .overlay-text {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+    </style>
 </head>
-<body id="body_index">
-
-<div id="header">
- <div id="inside">
-  <h1>Paul Sweeney Agronomy Ltd.</h1>
-
-  <h2>Independent Agronomist in Northwest England.</h2>
- </div>
-</div>
-
-<div id="block">
-
- <div id="menu">
-
-
-			<ul id="main">
-				<li><a class="active" href="http://www.psagronomy.co.uk/" accesskey="h"><span>Home</span></a></li>
-				<li><a href="http://www.psagronomy.co.uk/independent/" accesskey="i"><span>Independent Agronomy</span></a></li>
-				<li><a href="http://www.psagronomy.co.uk/service/" accesskey="s"><span>Agronomy Service</span></a></li>
-				<li><a href="http://www.psagronomy.co.uk/about/" accesskey="a"><span>About</span></a></li>
-				<li><a href="http://www.psagronomy.co.uk/contact/" accesskey="c"><span>Contact</span></a></li>
-				<li><a href="http://www.psagronomy.co.uk/links/" accesskey="l"><span>Links</span></a></li>
-			</ul>
-
- </div>
-
- <div id="content">
-
-	<h3><span id="breadcrumbs"><a href="http://www.psagronomy.co.uk/index/" title="Welcome to Paul Sweeney Agronomy Ltd">Welcome to Paul Sweeney Agronomy Ltd</a></span></h3>
-
-                <p> Independent agronomist working directly for farmers </p><p>  Consulting on agricultural and technical issues</p><p>Specialising in broadacre arable crops across NW England&nbsp; </p>   <p> Raising profits through improved crop management </p>  <br>  <div style="text-align: center"><img src="./images/psagro-front.jpg" border="0" alt="Cheshire Countryside" title="Cheshire Countryside" width="640" height="335"></div>
- </div>
-
- <div id="foot">
-© Paul Sweeney Agronomy Ltd. 2018
-</div>
-
-</div>
-</body></html>
+<body>
+    <div class="container">
+        <div class="image-wrapper">
+            <img src="goodbye.webp" alt="goodbye">
+            <svg class="overlay-text" viewBox="0 0 1024 1024" preserveAspectRatio="xMidYMid meet">
+                <path id="curve" 
+                      d="M 100 341 C 100 241, 924 241, 924 341" 
+                      fill="transparent" 
+                      stroke="transparent"/>
+                
+                <text text-anchor="middle" font-size="72" font-family="Georgia, serif">
+                    <animate attributeName="opacity" 
+                             from="0" to="1" 
+                             dur="2s" 
+                             fill="freeze"/>
+                    
+                    <textPath href="#curve" startOffset="50%">
+                        That's all folks!
+                    </textPath>
+                </text>
+            </svg>
+        </div>
+    </div>
+</body>
+</html>
